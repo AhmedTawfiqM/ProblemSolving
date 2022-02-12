@@ -1,16 +1,17 @@
 package pascale_triangle
 
+/*
+    https://leetcode.com/problems/pascals-triangle/
+
+ */
 object PascalTriangle {
 
     fun generate(numRows: Int): List<Array<Int>> {
         if (numRows == 0) throw IllegalStateException()
         val rows = arrayListOf<Array<Int>>()
+        rows.add(arrayOf(1))
 
-        for (currentItem in 1..numRows) {
-            if (currentItem == 1) {
-                rows.add(arrayOf(1))
-                continue
-            }
+        for (currentItem in 2..numRows) {
 
             val lastRow = rows[currentItem - 2]
             val currentRow = Array(currentItem) { 1 }
