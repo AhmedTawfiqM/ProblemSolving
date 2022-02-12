@@ -4,7 +4,7 @@ object App {
 
     @JvmStatic
     fun main(args: Array<String>) {
-        val result1 = PascalTriangle.generate(5)
+        val result1 = PascalTriangle.generate(2)
 //        val result2 = PascalTriangleByNCR.generate(5)
         //printArray(result1)
         drawTriangle(result1)

@@ -11,10 +11,6 @@ object PascalTriangle {
                 rows.add(arrayOf(1))
                 continue
             }
-            if (currentItem == 2) {
-                rows.add(arrayOf(1, 1))
-                continue
-            }
 
             val lastRow = rows[currentItem - 2]
             val currentRow = Array(currentItem) { 1 }
