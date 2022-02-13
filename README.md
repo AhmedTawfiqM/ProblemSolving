@@ -6,5 +6,5 @@
 
 
 <p align="center">
-<img src="https://github.com/AhmedTawfiqM/starter-android-library/blob/master/logo.png" alt="AndroidLibray"/>
+<img src="https://github.com/AhmedTawfiqM/starter-android-library/blob/master/challenges.jpg" alt="AndroidLibray"/>
 </p>
