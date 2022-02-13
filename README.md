@@ -1,7 +1,7 @@
 ![License](https://img.shields.io/badge/License-Apache-blue.svg)
 # Problem Solving
 
-My Solution of Challenges  and problems .
+### My Solution of Challenges  and problems .
 
 <p align="center">
 <img src="https://github.com/AhmedTawfiqM/ProblemSolving/blob/master/challenges.jpg" alt="Challenges"/>
