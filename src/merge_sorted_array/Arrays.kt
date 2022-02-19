@@ -1,6 +1,7 @@
 package merge_sorted_array
 
 object Arrays {
+    //https://leetcode.com/problems/merge-sorted-array/
     private fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
         if ((m + n) <= 0) throw IllegalStateException()
 
