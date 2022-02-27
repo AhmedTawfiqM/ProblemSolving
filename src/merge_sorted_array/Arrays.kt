@@ -22,18 +22,12 @@ object Arrays {
     @JvmStatic
     fun main(args: Array<String>) {
         //Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
-        val num1 = IntArray(6) { 0 }
-        num1[0] = 1
-        num1[1] = 2
-        num1[2] = 3
+        val num1 = intArrayOf(6, 7, 8, 9, 0, 0, 0, 0, 0)
+        merge(num1, 4, intArrayOf(1, 2, 3, 4, 5), 5)
+        println(num1.contentToString())
 
-        val num2 = IntArray(3)
-        num2[0] = 2
-        num2[1] = 5
-        num2[2] = 6
-
-        merge(num1, 3, num2, 3)
-
-        print(num1.contentToString())
+        val numX = intArrayOf(0)
+        merge(numX, 0, intArrayOf(1), 1)
+        println(numX.contentToString())
     }
 }
