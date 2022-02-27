@@ -4,14 +4,17 @@ package excel_sheet_colum_num
 object ExcelSheet {
 
     private fun titleToNumber(columnTitle: String): Int {
-        var result = 0  //result*26 + Char Decimal
+        if (columnTitle.isEmpty()) throw IndexOutOfBoundsException()
+        if (columnTitle.length > 7) throw IndexOutOfBoundsException()
+
+        var result = 0  //result*26 + (ASSCi Code)
         for (char in columnTitle)
-            result = result * 26 + (char - 'A' + 1)
+            result = (result * 26) + (char - 'A') + 1
         return result
     }
 
     @JvmStatic
     fun main(args: Array<String>) {
-        println(titleToNumber("BA"))
+        println(titleToNumber("AB"))
     }
 }
