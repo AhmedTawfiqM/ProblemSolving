@@ -1,21 +1,9 @@
 package palindrome_int
 
-//https://leetcode.com/problems/palindrome-number
-object PalindRomeInt {
+object BuiltInSolution {
 
-    private fun isPalindrome(input: Int): Boolean {
-        if (input < 0 || input >= Int.MAX_VALUE) return false
-        if (input in 0..9) return true
-
-        var original = input
-        var reversed = 0
-
-        while (original != 0) {
-            reversed = (reversed * 10) + original % 10
-            original /= 10
-        }
-        return input == reversed
-    }
+    private fun isPalindrome(input: Int) =
+        input.toString() == input.toString().reversed()
 
     @JvmStatic
     fun main(args: Array<String>) {

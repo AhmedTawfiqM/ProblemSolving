@@ -1,20 +1,18 @@
 package palindrome_int
 
 //https://leetcode.com/problems/palindrome-number
-object PalindRomeInt {
+object PalindRomeString {
 
     private fun isPalindrome(input: Int): Boolean {
         if (input < 0 || input >= Int.MAX_VALUE) return false
         if (input in 0..9) return true
 
-        var original = input
-        var reversed = 0
-
-        while (original != 0) {
-            reversed = (reversed * 10) + original % 10
-            original /= 10
+        val original = input.toString()
+        original.forEachIndexed { index, num ->
+            if (num != original[original.length - (index+1)])
+                return false
         }
-        return input == reversed
+        return true
     }
 
     @JvmStatic
